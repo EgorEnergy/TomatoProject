@@ -1,0 +1,868 @@
+<!doctypehtml>
+<html class=no-js lang=en xmlns=http://www.w3.org/1999/html>
+<meta charset=utf-8>
+<meta content="ie=edge" http-equiv=x-ua-compatible>
+<title>ДГТУ Зеленый Горизонт.рф</title>
+<meta content="" name=description>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<meta content="width=device-width,height=device-height,initial-scale=1" name=viewport>
+<link rel="icon" href="../../Downloads/АГРОСАЙТ/assets/photoForTomato/photo_2024-12-09_19-47-28.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../Downloads/АГРОСАЙТ/assets/photoForTomato/photo_2024-12-09_19-47-28.ico">
+<link href=https://use.fontawesome.com/releases/v5.4.1/css/all.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/owl.carousel.min.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/slick.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/magnific-popup.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/font.awesome.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/animate.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/jquery-ui.min.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/slinky.menu.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/plugins.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/style.css rel=stylesheet>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/vendor/modernizr-3.7.1.min.js></script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<style>.carousel {
+    position: relative
+}
+
+.carousel-item img {
+    object-fit: cover
+}
+
+#carousel-thumbs {
+    background: rgba(255, 255, 255, .3);
+    bottom: 0;
+    left: 0;
+    padding: 0 50px;
+    right: 0
+}
+
+#carousel-thumbs img {
+    border: 5px solid transparent;
+    cursor: pointer
+}
+
+#carousel-thumbs img:hover {
+    border-color: rgba(255, 255, 255, .3)
+}
+
+#carousel-thumbs .selected img {
+    border-color: #fff
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 50px
+}
+
+@media all and (max-width: 767px) {
+    .carousel-container #carousel-thumbs img {
+        border-width: 3px
+    }
+}
+
+@media all and (min-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        position: absolute
+    }
+}
+
+@media all and (max-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        background: #ccccce
+    }
+}
+
+.pulse {
+    width: 12vh;
+    height: 12vh;
+    background-color: #58ea00;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 12vh;
+    font-size: 3em;
+    position: relative
+}
+
+.pulse::after, .pulse::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    border: .01em solid #58ea00;
+    border-radius: 50%;
+    animation: pulsing 1.5s linear infinite
+}
+
+.pulse::after {
+    animation-delay: .5s
+}
+
+@keyframes pulsing {
+    0% {
+        transform: scale(.5);
+        opacity: 0
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0
+    }
+}
+
+.btn {
+
+    /*right: 50px;*/
+    /*width: 30px;*/
+    /*height: 50px;*/
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    /*padding: 25px 80px;*/
+    display: inline-block;
+    /*margin: 15px 30px;*/
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+    padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* Button 1 */
+.btn-1 {
+    background: #3498db;
+    color: #fff;
+}
+
+.btn-1:hover {
+    background: #2980b9;
+}
+
+.btn-1:active {
+    background: #2980b9;
+    top: 2px;
+}
+
+.btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+/* Button 2 */
+.btn-2 {
+
+    background: #2ecc71;
+    color: #fff;
+}
+
+.btn-2:hover {
+    background: #27ae60;
+}
+
+.btn-2:active {
+    background: #27ae60;
+    top: 2px;
+}
+
+.btn-2:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+/* Button 3 */
+.btn-3 {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.btn-3:hover {
+    background: #c0392b;
+}
+
+.btn-3:active {
+    background: #c0392b;
+    top: 2px;
+}
+
+.btn-3:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+/* Button 3 */
+.btn-4 {
+    background: #34495e;
+    color: #fff;
+}
+
+.btn-4:hover {
+    background: #2c3e50;
+}
+
+.btn-4:active {
+    background: #2c3e50;
+    top: 2px;
+}
+
+.btn-4:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+/* Icons */
+
+.icon-cart:before {
+    content: "\f07a";
+}
+
+.icon-heart:before {
+    content: "\f55a";
+}
+
+.icon-info:before {
+    content: "\f05a";
+}
+
+.icon-send:before {
+    content: "\f1d8";
+}
+
+
+/* CSS used here will be applied after bootstrap.css */
+.carousel {
+    margin-top: 20px;
+}
+.item .thumb {
+	width: 25%;
+	cursor: pointer;
+	float: left;
+}
+.item .thumb img {
+	width: 100%;
+	margin: 2px;
+}
+.item img {
+	width: 100%;
+}
+
+
+
+</style>
+
+<header>
+    <div class="header_transparent main_header sticky-header">
+        <div class=header_container>
+            <div class=container-fluid>
+                <div class="row align-items-center">
+                    <div class=col-lg-5 style="margin: 0 auto;
+                         display: grid;   justify-content: center;
+        align-items: center;">
+                        <div class="main_menu menu_position menu_two">
+                            <nav>
+                                <ul>
+                                    <li><a href=index2.0.html class=active>Главная</a>
+                                    <li class=mega_items><a style="white-space: nowrap;" href=продукт.html>Продукт</a>
+
+
+
+
+                                    <li><a href=https://github.com/EgorEnergy/TomatoProject/tree/master>Контакты</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+<div class="mb-100 mt-100 product_details">
+    <div class=container>
+        <div class=row>
+             <div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/2565e68ca52682c285334753cec92cd3.jpg">
+                </div>
+                <div class="item">
+                    <img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/ae7c63fc2467a361b352e24e28a96d83.jpg">
+                </div>
+                <div class="item">
+                    <img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/5.jpeg">
+                </div>
+                <div class="item">
+                    <img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/b2e48db56460d9acab99817d0220fb46.jpg">
+                </div>
+                <div class="item">
+                    <img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/1682112156_mykaleidoscope-ru-p-dachnoe-lakomstvo-tomat-dizain-vkontakte-100.jpg">
+                </div>
+                <div class="item">
+                    <img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/uhod-za-tomatami-posle-vysadki-rassady-v-otkrytyj-grunt-v-2020-godu8.jpg">
+                </div>
+                <div class="item">
+                    <img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/tomaty-v-teplitse.jpg">
+                </div>
+                <div class="item">
+                    <img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/6b18993829306a0152fa8a1104173462.jpg">
+                </div>
+            </div>
+        </div>
+    <div class="clearfix">
+        <div id="thumbcarousel" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/кружкипомидорки%20(1).png"></div>
+                    <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/кружкипомидорки%20(2).png"></div>
+                    <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/кружкипомидорки%20(3).png"></div>
+                    <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/кружкипомидорки%20(4).png"></div>
+                </div><!-- /item -->
+                <div class="item">
+                    <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/кружкипомидорки%20(5).png"></div>
+                    <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/кружкипомидорки%20(6).png"></div>
+                    <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/кружкипомидорки%20(7).png"></div>
+                    <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/кружкипомидорки%20(8).png"></div>
+                </div><!-- /item -->
+            </div><!-- /carousel-inner -->
+            <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div> <!-- /thumbcarousel -->
+    </div><!-- /clearfix -->
+    </div> <!-- /col-sm-6 -->
+            <div class="col-md-6 col-lg-6">
+                <div class=product_d_right>
+                    <form action=#><h1><a href=#>Камера Specim FX10+ <a><strong>(Ультраспектр)</strong></a></a></h1>
+                        <div class=product_ratting>
+                            <ul>
+                                <li><a href=#><i class=icon-star></i></a>
+                                <li><a href=#><i class=icon-star></i></a>
+                                <li><a href=#><i class=icon-star></i></a>
+                                <li><a href=#><i class=icon-star></i></a>
+                                <li><a href=#><i class=icon-star></i></a>
+                                <li class=review><a href=#><strong>Одобрено Покупателями</strong></a>
+                            </ul>
+                        </div>
+                        <div class=price_box><span class=current_price>25 000 ₽ </span><span class=old_price>32 000 ₽</span>
+                        </div>
+                        <div class=product_desc><p>Специальная технология Specim обеспечивает исключительную надежность и производительность. Измерения могут быть выполнены с высокой точностью в сотни раз быстрее, чем при использовании конкурирующих технологий.
+
+Спектральные сканеры Specim представляют собой комплексные решения для исследовательских приложений. В течение нескольких секунд они могут визуализировать биологические, химические и физические свойства исследуемых образцов и предметов, будь то артефакт или живой организм. Наши клиенты используют данные системы гиперспектральной визуализации в самых разных областях, начиная от обнаружения рака и заканчивая химическим анализом и составлением карт фотосинтеза в режиме реального времени.</div>
+                        <p><strong>Цены на продукцию могут незначительно изменяться.</strong>
+                        <p><strong>При заказе, пожалуйста, уточняйте, адрес, цену, колличество и сорт продукта.</strong>
+                        <p><strong>Действуют скидки на оптовые заказы.</strong>
+                        <div class="product_variant quantity"><label>Колличество</label> <input max=100 min=1
+                                                                                                type=number value=1>
+                            <button style="color: #ffffff" class=button onclick='location.href="https://t.me/@energy888love"' ; type=submit>Заказать
+                                сейчас
+                            </button>
+                        </div>
+                        <div class=product_meta><span> Все поставляемое нами оборудование обеспечивается официальной гарантией производителей с отправкой на ремонт и замену. Как правило, срок гарантии – 1 год.</span>
+                            <p></p><span>Интересный факт: <a
+                                    href="https://azimp.ru/product/giperspektralnaya-vysokoskorostnaya-kamera-specim-fx10-400-1000-nm-100-polos/?ysclid=m4hm4puw4997618563">Благодаря глубокому пониманию гиперспектральной визуализации компания Specim смогла тщательно оптимизировать все компоненты систем визуализации и создать готовые спектральные камеры, не имеющие аналогов. Эти полностью откалиброванные гиперспектральные линейные камеры точно измеряют полный спектр для каждого пикселя изображения одновременно.</a></span>
+                        </div>
+                    </form>
+                    <div align=center ;>
+                        <ul style="display:block;list-style:none;margin:2em auto;max-width:100%;padding:0;width:490px">
+                            <li style=display:inline-block;margin:.3em;width:150px>
+                                <button class=sharer onclick='window.location.href="https://t.me/@energy888love"'
+                                        data-sharer=whatsapp data-title="Merida Design Blog"
+                                        data-url=http://blog.meridadesign.com
+                                        style="background-color:#aaa;border:none;border-radius:24px;box-shadow:0 2px 0 #888,1px 4px 2px rgba(0,0,0,.2);color:#fff;display:block;font-family:sans-serif;font-size:.85em;font-weight:300;outline:0;padding:1em 0;position:relative;overflow:hidden;text-shadow:1px 1px 1px rgba(0,0,0,.2);width:100%;background-color:#43d854;box-shadow:0 2px 0 #222,1px 4px 2px rgba(0,0,0,.2)"
+                                        data-subject="This blog is awesome" data-to=https://t.me/@energy888love><i
+                                        class="fa fa-whatsapp"></i> Whatsapp
+                                </button>
+                            <li style=display:inline-block;margin:.3em;width:150px>
+                                <button class=sharer onclick='window.location.href="https://t.me/@energy888love"'
+                                        data-sharer=telegram data-title="Merida Design Blog"
+                                        data-url=http://blog.meridadesign.com
+                                        style="background-color:#aaa;border:none;border-radius:24px;box-shadow:0 2px 0 #888,1px 4px 2px rgba(0,0,0,.2);color:#fff;display:block;font-family:sans-serif;font-size:.85em;font-weight:300;outline:0;padding:1em 0;position:relative;overflow:hidden;text-shadow:1px 1px 1px rgba(0,0,0,.2);width:100%;background-color:#34ade1;box-shadow:0 2px 0 #0e9bd8,1px 4px 2px rgba(0,0,0,.2)">
+                                    <i class="fa fa-send"></i> Telegram
+                                </button>
+                            <li style=display:inline-block;margin:.3em;width:150px>
+                                <button class=sharer onclick='window.location.href="https://t.me/@energy888love"'
+                                        data-sharer=vk data-title="Merida Design Blog"
+                                        data-url=http://blog.meridadesign.com
+                                        style="background-color:#aaa;border:none;border-radius:24px;box-shadow:0 2px 0 #888,1px 4px 2px rgba(0,0,0,.2);color:#fff;display:block;font-family:sans-serif;font-size:.85em;font-weight:300;outline:0;padding:1em 0;position:relative;overflow:hidden;text-shadow:1px 1px 1px rgba(0,0,0,.2);width:100%;background-color:#45668e;box-shadow:0 2px 0 #2b4e77,1px 4px 2px rgba(0,0,0,.2)"
+                                        data-caption="This blog is awesome!"><i class="fa fa-vk"></i> VK
+                                </button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-90 product_d_info">
+    <div class=container>
+        <div class=row>
+            <div class=col-12>
+                <div class=product_d_inner>
+                    <div class=product_info_button>
+                        <ul class=nav role=tablist>
+                            <li><a href=#info class=active role=tab aria-controls=info aria-selected=false
+                                   data-toggle=tab>Характеристики</a>
+
+                        </ul>
+                    </div>
+                    <div class=tab-content>
+                        <div class="active fade show tab-pane" id=info role=tabpanel>
+                            <div class=product_info_content>
+                                <div class=brand_area>
+                                    <div class=container>
+                                        <div class=row>
+                                            <div class=col-12>
+                                                <div class="owl-carousel brand_container">
+                                                    <div class=single_brand><a href=#><img alt=""
+                                                                                           src=assets/photoForTomato/кружкипомидорки (1).png></a>
+                                                    </div>
+                                                    <div class=single_brand><a href=#><img alt=""
+                                                                                           src=assets/photoForTomato/кружкипомидорки (2).png></a>
+                                                    </div>
+                                                    <div class=single_brand><a href=#><img alt=""
+                                                                                           src=assets/photoForTomato/кружкипомидорки (3).png></a>
+                                                    </div>
+                                                    <div class=single_brand><a href=#><img alt=""
+                                                                                           src=assets/photoForTomato/кружкипомидорки (4).png></a>
+                                                    </div>
+                                                    <div class=single_brand><a href=#><img alt=""
+                                                                                           src=assets/photoForTomato/кружкипомидорки (5).png></a>
+                                                    </div>
+                                                    <div class=single_brand><a href=#><img alt=""
+                                                                                           src=assets/photoForTomato/кружкипомидорки (6).png></a>
+                                                    </div>
+                                                    <div class=single_brand><a href=#><img alt=""
+                                                                                           src=assets/photoForTomato/кружкипомидорки (7).png></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=product_d_table>
+                                    <form action=#>
+                                        <table>
+                                            <tr>
+
+                                                <td class=first_child style="font-size: x-large">Параметры
+
+
+                                                <td>Значения<b>
+                                            </b>
+                                            <tr>
+                                                <td class=first_child>
+                                                    Рабочий спектральный диапазон
+                                                <td>400-1000 нм
+                                            <tr>
+
+                                                <td class=first_child>Спектральное разрешение
+                                                <td>(FWHM)
+
+15 нм
+
+
+                                            <tr>
+                                                <td class=first_child>Спектральная выборка/пиксель
+
+                                                <td>6.3
+
+
+
+                                            <tr>
+                                                <td class=first_child>Спектральные полосы
+
+
+                                                <td>100
+
+
+                                            <tr>
+                                                <td class=first_child>Частота кадров
+
+
+                                                <td>705 кадров/сек (полный кадр)
+
+
+                                            <tr>
+                                                <td class=first_child>Биннинг
+
+                                                <td>
+2, 4, 8 (спектральный и пространственный)
+                                        </table>
+                                        <br>
+
+
+                                        <table>
+                                            <tr>
+
+                                                <td class=first_child style="font-size: x-large">Коррекция изображений
+
+
+
+
+                                                <td><b>Замена плохих пикселей</b>
+
+                                            <tr>
+
+
+                                                <td class=first_child>Автоматическое улучшение изображения (AIE)
+
+
+                                                <td>Материал сенсора
+
+КМОП
+
+                                            <tr>
+
+                                                <td class=first_child>Охлаждение сенсора
+
+
+                                                <td>Пассивное
+                                            <tr>
+
+
+                                                <td class=first_child>
+                                                    Полная емкость пикселя
+
+                                                <td>
+90 ке-
+
+
+                                            <tr>
+                                                <td class=first_child>Режимы считывания
+
+                                                <td>
+IWR/ITR
+
+                                            <tr>
+
+
+                                                <td class=first_child>Угол обзора
+
+                                                <td>
+12°, 24°, 38° (по умолчанию), 47°, 51°, 83°
+
+                                            <tr>
+
+                                                <td class=first_child>Интерфейс
+
+
+                                                <td>
+GigE Vision
+                                            <tr>
+
+                                                <td class=first_child>Контроль камеры
+
+                                                <td>
+GenICam, ASCII
+
+                                        </table>
+                                        <br>
+
+
+
+                                    </form>
+                                       <p>Особенности:
+
+
+ Спектральный диапазон 400-1000 нм;
+ Высокое пространственное разрешение 1024 пикселя;
+ Высокая скорость обработки изображения 705 кадров в секунду (2-спектральный биннинг);
+ Свободный выбор длины волны из 200 (2-спектральный биннинг) диапазонов в пределах покрытия камеры;
+ Встроенная коррекция изображения;
+ Унифицированная спектральная калибровка между устройствами;
+ Стандартный интерфейс GigE;
+ Простой монтаж в промышленных условиях;
+                                Сертификаты: CE, RoHS.</p><p>Применения:
+
+
+ Сортировка продуктов питания;
+ Качество продуктов питания;
+ Цвет и плотность в печати;
+ Контроль дисплеев и источников света;
+ Растительность и сельское хозяйство;
+                                Фенотипирование.</p>
+
+                                    <strong>Специальная технология Specim обеспечивает исключительную надежность и производительность. Измерения могут быть выполнены с высокой точностью в сотни раз быстрее, чем при использовании конкурирующих технологий.
+
+Спектральные сканеры Specim представляют собой комплексные решения для исследовательских приложений. В течение нескольких секунд они могут визуализировать биологические, химические и физические свойства исследуемых образцов и предметов, будь то артефакт или живой организм. Наши клиенты используют данные системы гиперспектральной визуализации в самых разных областях, начиная от обнаружения рака и заканчивая химическим анализом и составлением карт фотосинтеза в режиме реального времени.
+
+Спектральные Камеры
+
+Благодаря глубокому пониманию гиперспектральной визуализации компания Specim смогла тщательно оптимизировать все компоненты систем визуализации и создать готовые спектральные камеры, не имеющие аналогов. Эти полностью откалиброванные гиперспектральные линейные камеры точно измеряют полный спектр для каждого пикселя изображения одновременно.
+
+Все продукты Specim обладают отличным качеством изображения с превосходной пропускной способностью света, что приводит к высоким значениям скорости и производительности. Гиперспектральные системы Specim предназначены для широкого круга приложений, начиная от точных цветовых измерений и заканчивая химическим анализом.
+
+Specim FX10+ – это высокоскоростная гиперспектральная камера с линейным сканированием, оптимизированная для приложений, требующих быстрого получения изображений. Ее высокое разрешение обеспечивает точную и детальную съемку при высокой скорости. Specim FX10+ работает в видимой и ближней инфракрасной области (VNIR) от 400 до 1000 нм.</strong>
+                                </div>
+
+
+
+                        </div>
+                        <div class="fade tab-pane" id=reviews role=tabpanel>
+                            <div class=reviews_wrapper><h2>1 review for Donec eu furniture</h2>
+                                <div class=reviews_comment_box>
+                                    <div class=comment_thmb><img alt="" src=assets/img/blog/comment2.jpg></div>
+                                    <div class=comment_text>
+                                        <div class=reviews_meta>
+                                            <div class=star_rating>
+                                                <ul>
+                                                    <li><a href=#><i class=icon-star></i></a>
+                                                    <li><a href=#><i class=icon-star></i></a>
+                                                    <li><a href=#><i class=icon-star></i></a>
+                                                    <li><a href=#><i class=icon-star></i></a>
+                                                    <li><a href=#><i class=icon-star></i></a>
+                                                </ul>
+                                            </div>
+                                            <p><strong>admin </strong>- September 12, 2018</p><span>roadthemes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=comment_title><h2>Add a review</h2>
+                                    <p>Your email address will not be published. Required fields are marked</div>
+                                <div class="product_ratting mb-10"><h3>Your rating</h3>
+                                    <ul>
+                                        <li><a href=#><i class=icon-star></i></a>
+                                        <li><a href=#><i class=icon-star></i></a>
+                                        <li><a href=#><i class=icon-star></i></a>
+                                        <li><a href=#><i class=icon-star></i></a>
+                                        <li><a href=#><i class=icon-star></i></a>
+                                    </ul>
+                                </div>
+                                <div class=product_review_form>
+                                    <form action=#>
+                                        <div class=row>
+                                            <div class=col-12><label for=review_comment>Your review</label> <textarea
+                                                    id=review_comment name=comment></textarea></div>
+                                            <div class="col-md-6 col-lg-6"><label for=author>Name</label> <input
+                                                    id=author></div>
+                                            <div class="col-md-6 col-lg-6"><label for=email>Email</label> <input
+                                                    id=email></div>
+                                        </div>
+                                        <button type=submit>Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div style=display:flex;justify-content:center;flex-wrap:wrap;width:100%;position:relative;text-align:center>
+    <div style=width:600px;height:600px;overflow:hidden;position:relative><h2
+            style=display:flex;justify-content:center;flex-wrap:wrap;width:100%;text-align:center><strong>Как
+        добраться
+        до <span style=color:#093>ДГТУ</span></strong></h2>
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=39.713262%2C47.238752&mode=poi&poi%5Bpoint%5D=39.712282%2C47.237269&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D37547176922&z=15"
+                width="560" height="400" frameborder="1" allowfullscreen="true"
+                style="position:relative;"></iframe>
+        <a
+                href="https://yandex.ru/maps/org/donskoy_gosudarstvenny_tekhnicheskiy_universitet_priyomnaya_komissiya/37547176922/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a
+                href="https://yandex.ru/maps/39/rostov-na-donu/category/university/184106140/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;"></a></div>
+
+
+    <div class=sidebar style=width:560px;height:800px;position:relative;overflow:hidden><h2
+            style=display:flex;justify-content:center;flex-wrap:wrap;width:100%;text-align:center><strong>Отзывы
+        на
+        <span style=color:red>Я</span>ндекс<span style=color:#fc0> Картах</span></strong></h2>
+        <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+                src="https://yandex.ru/maps-reviews-widget/37547176922?comments"></iframe>
+        <a href="https://yandex.ru/maps/org/donskoy_gosudarstvenny_tekhnicheskiy_universitet_priyomnaya_komissiya/37547176922/"
+           target="_blank"
+           style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Донской
+            государственный технический университет, приёмная комиссия на карте Ростова‑на‑Дону — Яндекс Карты</a>
+    </div>
+</div>
+
+
+
+<footer class=footer_widgets>
+    <div class=footer_top>
+        <div class=container>
+            <div class=row>
+                <div class="col-lg-2 col-sm-6 col-md-4">
+                    <div class="widgets_container contact_us"><h3>Режим работы</h3>
+                        <p><span>Ежедневно </span>с <strong>09:00</strong> до <strong>19:00</strong>
+                        <p><span>Мы работаем по праздникам с </span><strong>09:00</strong> до
+                            <strong>19:00</strong>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3">
+                    <div class="widgets_container widget_menu"><h3>Информация</h3>
+                        <div class=footer_menu>
+                            <ul>
+                                <li><a href=blog.html>Про Нас</a>
+                                <li><a href=https://yandex.ru/maps/-/CTHkfjS>Как добраться</a>
+                                <li>
+                                    <a href="https://yandex.ru/maps/org/zelyony_gorizont/13788807445/reviews/?ll=38.365564%2C55.878978&z=10">Отзывы</a>
+                                <li><a href=tel:899029728282>Зеленая карта</a>
+                                <li>
+                                    <a href=https://github.com/EgorEnergy/TomatoProject/tree/master>Авторские
+                                        права</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="widgets_container widget_app">
+                        <div class=footer_logo><a href=index.html><img alt="" src=assets/img/logo/logo.png></a>
+                        </div>
+                        <div class=footer_widgetnav_menu>
+                            <ul>
+                                <li><a href=tel:899029728282>Оплата</a>
+                                <li><a href=tel:899029728282>Партнеры</a>
+                                <li><a href=tel:899029728282>Контакты</a>
+                                <li><a href=tel:899029728282>Интернет</a>
+                            </ul>
+                        </div>
+                        <div class=footer_social>
+                            <ul>
+                                <li><a href=899029728282><i class="fa fa-whatsapp"
+                                                                         aria-hidden=true></i></a>
+                                <li><a href=899029728282><i class="fa fa-telegram"
+                                                                              aria-hidden=true></i></a>
+                                <li><a href=tel:899029728282><i class="fa fa-phone" aria-hidden=true></i></a>
+                                <li><a href=index.html><i class="fa fa-mail-forward" aria-hidden=true></i></a>
+                            </ul>
+                        </div>
+                        <div class=footer_app>
+                            <ul>
+                                <li><a href=#><img alt="" src=assets/img/icon/icon-app.jpg></a>
+                                <li><a href=#><img alt="" src=assets/img/icon/icon1-app.jpg></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-4">
+                    <div class="widgets_container widget_menu"><h3>Сообщество</h3>
+                        <div class=footer_menu>
+                            <ul>
+                                <li><a href=tel:899029728282>+7 (990) 297 28 28</a>
+                                <li><a href=tel:899029728282>Реклама</a>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-4">
+                    <div class="widgets_container widget_menu"><h3>Меню</h3>
+                        <div class=footer_menu>
+                            <ul>
+                                <li><a href=index.html>На Главную</a>
+                                <li><a href=shop-fullwidth.html>Каталог</a>
+                                <li><a href=blog.html>Блог</a>
+                                <li><a href=contact.html>Карта Сайта</a>
+                                <li><a href=tel:89637727022>Связаться с нами</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=footer_bottom>
+        <div class=container>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class=copyright_area><p class=copyright-text>© 10.12.2024 <a href=index.html>ДГТУ Зеленый Горизонт
+                        💚</a>.
+                        Made with <i class="fa fa-heart text-danger"></i> by <a href="tel:8 (989) 579-58-75"
+                                                                                target=_blank>yegorenergy</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class=footer_payment><a href=#><img alt="" src=assets/img/icon/payment.png></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/vendor/jquery-3.4.1.min.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/popper.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/bootstrap.min.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/owl.carousel.min.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/slick.min.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/jquery.magnific-popup.min.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/jquery.counterup.min.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/jquery.countdown.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/jquery.ui.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/jquery.elevatezoom.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/isotope.pkgd.min.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/slinky.menu.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/plugins.js></script>
+<script src=../../Downloads/АГРОСАЙТ/assets/js/main.js></script>

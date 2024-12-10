@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class=no-js lang=en xmlns=http://www.w3.org/1999/html>
+<meta charset=utf-8>
+
+
+<meta content="ie=edge" http-equiv=x-ua-compatible>
+<title>ДГТУ Зеленый Горизонт.рф</title>
+<meta content="" name=description>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<meta content="width=device-width,height=device-height,initial-scale=1" name=viewport>
+<link rel="icon" href="../../Downloads/АГРОСАЙТ/assets/photoForTomato/photo_2024-12-09_19-47-28.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../Downloads/АГРОСАЙТ/assets/photoForTomato/photo_2024-12-09_19-47-28.ico">
+<link href=https://use.fontawesome.com/releases/v5.4.1/css/all.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/owl.carousel.min.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/slick.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/magnific-popup.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/font.awesome.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/animate.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/jquery-ui.min.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/slinky.menu.css rel=stylesheet>
+<link href=../../Downloads/АГРОСАЙТ/assets/css/plugins.css rel=stylesheet>
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="" name=description>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="width=device-width,height=device-height,initial-scale=1" name=viewport>
+    <link rel="icon" href="assets\img\logo\Green Horizon-round.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets\img\logo\Green Horizon-round.ico">
+
+
+    <title>Product Card UI Design</title>
+
+    <!-- Vendor Script -->
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<style>
+
+    /*********************************************/
+    /*COLORS*/
+    /*********************************************/
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none !important;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: black;
+    }
+
+    input,
+    input:focus,
+    input:active {
+        outline: none;
+    }
+
+    button,
+    button:active,
+    button:focus,
+    button:hover {
+        outline: none;
+    }
+
+    button {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: #000;
+    }
+
+    .mainWrapper {
+        position: relative;
+        width: 100%;
+        min-width: 320px;
+        min-height: 1000px;
+        padding: 0;
+        margin: 0 !important;
+        background: radial-gradient(rgb(48, 61, 85), rgb(47, 51, 82));
+    }
+
+    .wrappen_block {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainBackground {
+        width: 100%;
+        min-height: 1000px;
+        background: url("https://github.com/BlackStar1991/CardProduct/blob/master/app/img/bgRectangl.png?raw=true") left center no-repeat, url("https://github.com/BlackStar1991/CardProduct/blob/master/app/img/bgPhons.png?raw=true") center center no-repeat, url("https://github.com/BlackStar1991/CardProduct/blob/master/app/img/layer-3-copy-2.png?raw=true") center center no-repeat, url("https://github.com/BlackStar1991/CardProduct/blob/master/app/img/mainBg.png?raw=true") center center no-repeat;
+    }
+
+    .productCard_block {
+        position: relative;
+        margin: 190px auto 0;
+        max-width: 800px;
+        min-height: 600px;
+        box-shadow: 0 5px 21px rgba(0, 0, 0, 0.08);
+        background-color: #fff;
+    }
+
+    /* LEFT SIDE */
+    .productCard_leftSide {
+        position: relative;
+        width: 100%;
+        min-height: 600px;
+    }
+
+    .productCard_brendBlock {
+        width: 100%;
+        height: 75px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 184px;
+        max-height: 75px;
+        background-color: #272727;
+        z-index: 2;
+    }
+
+    .productCard_brendBlock__imageBlock {
+        display: block;
+        height: 100%;
+    }
+
+    .productCard_brendBlock__imageBlock img {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sliderBlock {
+        position: relative;
+        height: 100%;
+        margin-left: 70px;
+        margin-top: 89px;
+        margin-bottom: 46px;
+        overflow: hidden;
+    }
+
+    .sliderBlock_items {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 403px;
+    }
+
+    .sliderBlock_items__itemPhoto {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity 1s;
+    }
+
+    .sliderBlock_items__showing {
+        opacity: 1;
+        z-index: 3;
+    }
+
+    .sliderBlock_items:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url("https://github.com/BlackStar1991/CardProduct/blob/master/app/img/decorElements/DecorRectangle.png") 50% 50% no-repeat;
+        opacity: 0.2;
+        z-index: 4;
+    }
+
+    .sliderBlock_controls {
+        width: 100%;
+    }
+
+    .sliderBlock_controls__navigatin {
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .sliderBlock_controls__wrapper {
+        margin: 1% auto;
+        width: 110px;
+        height: 20px;
+    }
+
+    .sliderBlock_controls__arrow {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        border: 1px solid #536dfe;
+        transition: 300ms all;
+        background-color: #0d2660;
+        border-radius: 50%;
+    }
+
+    .sliderBlock_controls__arrow:hover {
+        background-color: #536dfe;
+    }
+
+    .sliderBlock_controls__arrow i {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        margin-left: -50%;
+        margin-top: -50%;
+        color: #fff;
+        transition: 300ms all;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .sliderBlock_controls__arrowBackward {
+        float: left;
+    }
+
+    .sliderBlock_controls__arrowForward {
+        float: right;
+    }
+
+    .sliderBlock_positionControls {
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin: 30px auto 0;
+    }
+
+    .sliderBlock_positionControls__paginatorItem {
+        float: left;
+        width: 18px;
+        height: 10px;
+        margin-left: 5px;
+        background-color: #d7d7d7;
+        cursor: pointer;
+    }
+
+    .sliderBlock_positionControls__paginatorItem:first-child {
+        margin-left: 31%;
+    }
+
+    .sliderBlock_positionControls__active {
+        background-color: #536dfe;
+    }
+
+    /*   RIGHT SIDE */
+    .productCard_rightSide {
+        position: relative;
+        padding-top: 34px;
+        padding-left: 27px;
+        padding-right: 40px;
+        width: 100%;
+        min-height: 600px;
+    }
+
+    .block_specification {
+        float: right;
+        margin-top: 8px;
+        cursor: pointer;
+        color: #536dfe;
+        transition: all 0.5s;
+    }
+
+    .block_specification__button {
+        display: inline-block;
+        margin-right: 7px;
+        height: 100%;
+        font-size: 17px;
+        text-transform: uppercase;
+        transform: rotate(0);
+        transition: transform 0.5s;
+        transform-origin: center center;
+    }
+
+    .block_specification:hover .block_specification__button__rotate {
+        transition: transform 0.5s;
+        transform: rotate(1turn);
+    }
+
+    .block_specification:hover {
+        color: #f1425d;
+    }
+
+    .block_specification__text {
+        width: 30px;
+        height: 11px;
+        font-family: "Titillium Web", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .block_model {
+        display: inline-block;
+        color: #263238;
+        font-size: 12px;
+        opacity: 0.9;
+    }
+
+    .block_name {
+        width: 100%;
+        color: #263238;
+        font-weight: 400;
+        line-height: 35px;
+    }
+
+    .block_name__mainName {
+        margin: 0;
+        padding: 0;
+        font-size: 29px;
+    }
+
+    .block_name__addName {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+    }
+
+    .block_product {
+        position: relative;
+        width: 100%;
+    }
+
+    .block_product__advantagesProduct {
+        width: 271px;
+        height: 41px;
+        margin-top: 14px;
+        color: #646b6f;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .block_product__link {
+        line-height: 23px;
+        color: #536dfe;
+    }
+
+    .block_informationAboutDevice {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .block_descriptionInformation {
+        width: 304px;
+        height: 104px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #263238;
+    }
+
+    .block_descriptionCharacteristic {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 30;
+        transition: left, ease-out, 0.5s;
+    }
+
+    .block_descriptionCharacteristic__active {
+        left: 0;
+    }
+
+    @keyframes moveCharackeristic {
+        0% {
+            left: 100%;
+        }
+        100% {
+            left: 0;
+        }
+    }
+
+    .block_specificationInformation_table {
+        position: relative;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .block_specificationInformation_table tr {
+        border-collapse: collapse;
+        border: 1px solid #000;
+    }
+
+    .block_specificationInformation_table th {
+        border: 1px solid #000;
+        font-weight: bold;
+    }
+
+    .block_specificationInformation_table td {
+        border-collapse: collapse;
+        text-align: center;
+        border: 1px solid #000;
+    }
+
+    .block_rating {
+        width: 100%;
+        margin-top: 33px;
+    }
+
+
+    .block_rating2 {
+        width: 100%;
+        margin-top: 33px;
+    }
+
+    fieldset,
+    label {
+        margin: 0;
+        padding: 0;
+    }
+
+    .block_rating__stars {
+        border: none;
+        float: left;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .block_rating__stars2 {
+        border: none;
+        /*float: right;*/
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .block_rating__stars3 {
+        border: none;
+        float: left;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    input[type=checkbox] + label,
+    input[type=radio] + label {
+        margin: 0;
+    }
+
+    .block_rating__stars > input {
+        display: none;
+    }
+
+    .block_rating__stars > label:before {
+        margin: 5px;
+        font-size: 15px;
+        font-family: "FontAwesome";
+        display: inline-block;
+        content: "\f005";
+    }
+
+    .block_rating__stars > .half:before {
+        content: "\f089";
+        position: absolute;
+    }
+
+    .block_rating__stars > label {
+        color: #c9c9c9;
+        float: right;
+    }
+
+    /***** CSS Magic to Highlight Stars on Hover *****/
+    .block_rating__stars > input:checked ~ label,
+    .block_rating__stars:not(:checked) > label:hover,
+    .block_rating__stars:not(:checked) > label:hover ~ label {
+        color: #fccf47;
+    }
+
+    /* hover previous stars in list */
+    .block_rating__stars > input:checked + label:hover,
+    .block_rating__stars > input:checked ~ label:hover,
+    .block_rating__stars > label:hover ~ input:checked ~ label,
+    .block_rating__stars > input:checked ~ label:hover ~ label {
+        color: #ffed85;
+    }
+
+    .block_rating__avarage {
+        margin-left: 31px;
+        color: #f1425d;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .block_rating__reviews {
+        margin-left: 6px;
+        color: #656c6f;
+        font-size: 13px;
+    }
+
+
+    input[type=checkbox2] + label,
+    input[type=radio2] + label {
+        margin: 0;
+    }
+
+
+    .block_rating__stars2 > input {
+        display: none;
+    }
+
+    .block_rating__stars2 > label:before {
+        margin: 5px;
+        font-size: 15px;
+        font-family: "FontAwesome";
+        display: inline-block;
+        content: "\f005";
+    }
+
+    .block_rating__stars2 > .half:before {
+        content: "\f089";
+        position: absolute;
+    }
+
+    .block_rating__stars2 > label {
+        color: #c9c9c9;
+        float: right;
+    }
+
+    /***** CSS Magic to Highlight Stars on Hover *****/
+    .block_rating__stars2 > input:checked ~ label,
+    .block_rating__stars2:not(:checked) > label:hover,
+    .block_rating__stars2:not(:checked) > label:hover ~ label {
+        color: #fccf47;
+    }
+
+    /* hover previous stars in list */
+    .block_rating__stars2 > input:checked + label:hover,
+    .block_rating__stars2 > input:checked ~ label:hover,
+    .block_rating__stars2 > label:hover ~ input:checked ~ label,
+    .block_rating__stars2 > input:checked ~ label:hover ~ label {
+        color: #ffed85;
+    }
+
+    .block_rating__avarage {
+        margin-left: 31px;
+        color: #f1425d;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .block_rating__reviews {
+
+        color: #656c6f;
+        font-size: 13px;
+    }
+
+
+    .block_rating__avarage2 {
+        margin-left: 31px;
+        color: #f1425d;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .block_rating__reviews2 {
+        margin-left: 6px;
+        color: #656c6f;
+        font-size: 13px;
+    }
+
+    .block_price {
+        margin-top: 29px;
+        width: 100%;
+    }
+
+    .block_price__currency {
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        color: #f1425d;
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .block_price__shipping {
+        padding: 0;
+        margin: 0;
+        color: #a2a9ad;
+        font-size: 12px;
+    }
+
+    .radio_button {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .block_goodColor {
+        margin-top: 29px;
+        width: 100%;
+    }
+
+    .block_goodColor__allColors {
+        width: 100%;
+        margin-top: 14px;
+    }
+
+    .block_goodColor__radio {
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        margin-left: 10% !important;
+        background-color: #e8e6e3;
+        cursor: pointer;
+    }
+
+    .radio_button:checked + .block_goodColor__radio {
+        width: 25px;
+        height: 25px;
+        box-shadow: 0 0 5px 3px rgba(83, 109, 254, 0.5);
+        border: 2px solid #fff;
+    }
+
+    .block_goodColor__black {
+        background-color: #3c383a;
+    }
+
+    .block_goodColor__silver {
+        background-color: silver;
+    }
+
+    .text_specification {
+        padding: 0;
+        color: #37474f;
+        font-size: 13px;
+    }
+
+    .block_quantity {
+        position: relative;
+        height: 46px;
+        margin-top: 45px;
+    }
+
+    .block_quantity span {
+        display: inline-block;
+        float: left;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .block_quantity__chooseBlock {
+        vertical-align: top;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .block_quantity__number {
+        display: inline-block;
+        float: left;
+        width: 52px;
+        height: 46px;
+        border: 1px solid #ddd;
+        font-size: 18px;
+    }
+
+    .block_quantity__number::placeholder {
+        color: #403f40;
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .block_quantity__button {
+        display: inline-block;
+        position: relative;
+        float: left;
+        width: 20px;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+        margin-left: 11px;
+        font-size: 0;
+        cursor: pointer;
+    }
+
+    .block_quantity__button:hover, .block_quantity__button:focus {
+        background-color: transparent;
+    }
+
+    .block_quantity__button:hover:before, .block_quantity__button:focus:before {
+        color: #536dfe;
+    }
+
+    .block_quantity__up:before {
+        content: "\f106";
+        width: 11px;
+        height: 6px;
+        font-family: "FontAwesome";
+        color: #37474f;
+        font-size: 18px;
+    }
+
+    .block_quantity__down:before {
+        content: "\f107";
+        width: 11px;
+        height: 6px;
+        font-family: "FontAwesome";
+        color: #37474f;
+        font-size: 18px;
+    }
+
+    .button.button_addToCard {
+        width: 147px;
+        height: 46px;
+        margin-top: 43px;
+        margin-bottom: 0;
+        padding: 0;
+        color: #fff;
+        background-color: #536dfe;
+        font-size: 17px;
+        transition: all 0.3s;
+    }
+
+    .button.button_addToCard:hover {
+        background-color: #0d2660;
+    }
+
+    .aboutMe a {
+        display: block;
+        width: 30%;
+        position: fixed;
+        bottom: 0.1%;
+        left: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.5em;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+    }
+
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+
+        background: #FFFFFF;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 850px;
+        height: 650px;
+        background: #fffafa;
+        margin: 20px;
+    }
+
+    .container .imgBx1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        background: #dfdfdf;
+        transition: .3s linear;
+    }
+
+
+    .container .imgBx1:before {
+        content: 'ДГТУ Горизонт';
+
+
+        position: absolute;
+        top: 0px;
+
+        color: #FFFFFF;
+        /*opacity: 0.2;*/
+        /*width:50vw;*/
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 3em;
+        font-weight: 800;
+    }
+
+
+    .container .imgBx1 img {
+        position: relative;
+        width: 1080px;
+        transform: rotate(0deg);
+
+        transition: .9s linear;
+    }
+
+    .container .imgBx2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        background: #212121;
+        transition: .3s linear;
+    }
+
+
+    .container .imgBx2:before {
+
+        position: absolute;
+        top: 0px;
+        left: 24px;
+        color: #000;
+        opacity: 0.2;
+        font-size: 8em;
+        font-weight: 800;
+    }
+
+
+    .container .imgBx2 img {
+        position: relative;
+        width: 700px;
+        transform: rotate(-30deg);
+        left: -50px;
+        transition: .9s linear;
+    }
+
+    .container .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-sizing: border-box;
+
+    }
+
+    .container .details h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.4em;
+        line-height: 1em;
+        color: #444;
+    }
+
+    .container .details h2 span {
+        font-size: 0.4em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #999;
+    }
+
+    .container .details p {
+        max-width: 85%;
+        margin-left: 15%;
+        color: #333;
+        font-size: 15px;
+        margin-bottom: 36px;
+    }
+
+    .container .details h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5em;
+        color: #a2a2a2;
+        float: left;
+    }
+
+    /*.container .details button {*/
+    /*    background: #000;*/
+    /*    color: #fff;*/
+    /*    border: none;*/
+    /*    outline: none;*/
+    /*    padding: 15px 20px;*/
+    /*    margin-top: 5px;*/
+    /*    font-size: 16px;*/
+    /*    letter-spacing: 1px;*/
+    /*    text-transform: uppercase;*/
+    /*    font-weight: 600;*/
+    /*    border-radius: 40px;*/
+    /*    float: right;*/
+    /*}*/
+
+    .product-colors1 span {
+        width: 110px;
+        height: 110px;
+
+        /*margin-top: -100px;*/
+        margin-right: 5px;
+        left: 0px;
+
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    /*.PcPhoto1 {*/
+    /*    background-image: url("ssfsef");*/
+    /*}*/
+
+    /*.PcPhoto2 {*/
+
+
+    /*}*/
+
+    /*.PcPhoto3 {*/
+    /*    content: "sdfgsdfgds";*/
+    /*}*/
+
+    .product-colors1 .active:after {
+        content: "";
+        width: 150px;
+        height: 150px;
+        border: 2px solid #000;
+        position: absolute;
+
+        box-sizing: border-box;
+        left: -5px;
+        top: -5px;
+    }
+
+
+    .product-colors2 span {
+        width: 110px;
+        height: 110px;
+        top: 7px;
+        margin-right: 12px;
+        left: 10px;
+
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .product-colors2 .active:after {
+        content: "";
+        width: 110px;
+        height: 110px;
+        border: 2px solid #000;
+        position: absolute;
+
+        box-sizing: border-box;
+        left: -5px;
+        top: -5px;
+    }
+
+    .PcPhoto4 {
+        background-image: url("7aa17653-d6c5-479d-b8dc-b4cc4dc742d1.Jpeg.970 (1).jpg");
+    }
+
+    .PcPhoto5 {
+        background: url("https://kaliningrad.radiostuff.ru/wa-data/public/shop/products/95/21/82195/images/1017753/7aa17653-d6c5-479d-b8dc-b4cc4dc742d1.Jpeg.970.jpg");
+    }
+
+    .PcPhoto6 {
+        background: url("https://kaliningrad.radiostuff.ru/wa-data/public/shop/products/95/21/82195/images/1017753/7aa17653-d6c5-479d-b8dc-b4cc4dc742d1.Jpeg.970.jpg");
+    }
+
+
+    /* responsive */
+    @media (max-width: 1080px) {
+        .container {
+            height: auto;
+        }
+
+        .container .imgBx1 {
+            padding: 40px;
+            box-sizing: border-box;
+            width: 100% !important;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container .imgBx1 img {
+            left: initial;
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+
+        .container .imgBx2 {
+            padding: 40px;
+            box-sizing: border-box;
+            width: 100% !important;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container .imgBx2 img {
+            left: initial;
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+
+
+        .container .imgBx3 {
+            padding: 40px;
+            box-sizing: border-box;
+            width: 100% !important;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container .imgBx3 img {
+            left: initial;
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+
+
+        .container .imgBx4 {
+            padding: 40px;
+            box-sizing: border-box;
+            width: 100% !important;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container .imgBx4 img {
+            left: initial;
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+
+        .details {
+            width: 100% !important;
+            height: auto;
+            padding: 20px;
+        }
+
+        .container .details p {
+            margin-left: 0;
+            max-width: 100%;
+        }
+    }
+
+    footer {
+        position: fixed;
+        right: 16px;
+        bottom: 12px;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .card__label {
+        padding: 4px 8px;
+        position: absolute;
+        bottom: 10px;
+
+        background: #005bff;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        height: auto;
+        width: auto;
+
+
+        align-content: center;
+        margin-left: 220px;
+    }
+
+
+    .card__label_2 {
+        padding: 4px 8px;
+        position: absolute;
+        bottom: 10px;
+        /*left: 100px;*/
+        background: #f1425d;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        align-content: center;
+
+        height: auto;
+        width: auto;
+    }
+
+    .card__label_3 {
+        padding: 4px 8px;
+        position: absolute;
+        bottom: 10px;
+        /*left: 210px;*/
+        background: #10c44c;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        align-content: center;
+        height: auto;
+        width: auto;
+        white-space: nowrap;
+        margin-left: -220px;
+    }
+
+
+    .card__label_4 {
+        padding: 4px 8px;
+        position: absolute;
+        bottom: 10px;
+        left: 370px;
+        background: #f1425d;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+    }
+
+
+    .old-dis {
+        white-space: pre;
+        position: relative;
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .old-dis:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        color: red;
+        width: 100%;
+        height: 0;
+        border-bottom: 2px solid red;
+        transform: rotate(-5deg);
+    }
+
+    .new-dis {
+        white-space: pre;
+        position: relative;
+        display: inline-block;
+        font-size: 17px;
+
+
+    }
+
+    .new-dis:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        color: red;
+        width: 100%;
+        height: 0;
+
+    }
+
+
+    .btn {
+
+        /*right: 50px;*/
+        width:300px;
+        height: 66px;
+        border: none;
+        font-family: 'Lato';
+        font-size: inherit;
+        color: inherit;
+        background: none;
+        cursor: pointer;
+        /*padding: 25px 80px;*/
+        display: inline-block;
+        /*margin: 15px 30px;*/
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        white-space: nowrap;
+    }
+
+    .btn:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    /* Pseudo elements for icons */
+    .btn:before {
+        font-family: 'FontAwesome';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        position: relative;
+        -webkit-font-smoothing: antialiased;
+    }
+
+
+    /* Icon separator */
+    .btn-sep {
+        padding: 25px 60px 25px 120px;
+    }
+
+    .btn-sep:before {
+        background: rgba(0, 0, 0, 0.15);
+    }
+
+    /* Button 1 */
+    .btn-1 {
+        background: #3498db;
+        color: #fff;
+    }
+
+    .btn-1:hover {
+        background: #2980b9;
+    }
+
+    .btn-1:active {
+        background: #2980b9;
+        top: 2px;
+    }
+
+    .btn-1:before {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        line-height: 3;
+        font-size: 140%;
+        width: 60px;
+    }
+
+    /* Button 2 */
+    .btn-2 {
+
+        background: #2ecc71;
+        color: #fff;
+    }
+
+    .btn-2:hover {
+        background: #27ae60;
+    }
+
+    .btn-2:active {
+        background: #27ae60;
+        top: 2px;
+    }
+
+    .btn-2:before {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        line-height: 3;
+        font-size: 140%;
+        width: 60px;
+    }
+
+    /* Button 3 */
+    .btn-3 {
+        background: #e74c3c;
+        color: #fff;
+    }
+
+    .btn-3:hover {
+        background: #c0392b;
+    }
+
+    .btn-3:active {
+        background: #c0392b;
+        top: 2px;
+    }
+
+    .btn-3:before {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        line-height: 3;
+        font-size: 140%;
+        width: 60px;
+    }
+
+    /* Button 3 */
+    .btn-4 {
+        background: #34495e;
+        color: #fff;
+    }
+
+    .btn-4:hover {
+        background: #2c3e50;
+    }
+
+    .btn-4:active {
+        background: #2c3e50;
+        top: 2px;
+    }
+
+    .btn-4:before {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        line-height: 3;
+        font-size: 140%;
+        width: 60px;
+    }
+
+    /* Icons */
+
+    .icon-cart:before {
+        content: "\f07a";
+    }
+
+    .icon-heart:before {
+        content: "\f55a";
+    }
+
+    .icon-info:before {
+        content: "\f05a";
+    }
+
+    .icon-send:before {
+        content: "\f1d8";
+    }
+
+
+    a.change-text {
+        color: #444444; /* Цвет текста */
+        font-size: 1.5em; /* Размер текста */
+
+        /*filter: drop-shadow(0 0 4px red);*/
+        padding: 20px 0px;
+
+        line-height: 1;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    a.change-text:hover {
+        color: #5265f6; /* Меняем цвет текста */
+    }
+
+    /*body { font-size: 100% }*/
+    /*h5 {font-size: 200% }*/
+
+    /*@media all and (max-width:600px) {*/
+    /*    body {font-size: 100%}*/
+    /*}*/
+
+    .star {
+        background-color: black;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+    }
+
+    #active {
+        background-color: #fccf47;
+    }
+
+    .zoomer {
+        width: 300px;
+        height: 200px;
+        position: relative;
+    }
+
+    .zoomer .small {
+        width: 300px;
+        height: 200px;
+        background: url(https://storage.yandexcloud.net/incrussia-prod/wp-content/uploads/2017/09/Jack-Ma.jpg) no-repeat;
+        background-size: cover;
+        /* Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. */
+        position: absolute;
+    }
+
+    .zoomer .large {
+        background: url(https://storage.yandexcloud.net/incrussia-prod/wp-content/uploads/2017/09/Jack-Ma.jpg) no-repeat;
+        position: absolute;
+        display: none;
+        width: 600px;
+        height: 400px;
+    }
+
+    @import url("https://fonts.googleapis.com/css?family=Roboto:900");
+    /**
+      * style variables
+    */
+    /**
+      * Control & indicator mixin
+    */
+    .carousel {
+
+        width: 400px;
+        height: 500px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        padding: 0;
+        list-style: none;
+        /**
+          * Where the magic happens
+          */
+        /**
+            * Control element - right/left arrows
+          */
+        /**
+            * Element for holding slide indicators
+          */
+        /**
+            * Indicator for indicating active slide
+          */
+        /**
+            * Create rules for when slides are contained within a track
+          */
+    }
+
+    .carousel__controls,
+    .carousel__activator {
+        display: none;
+    }
+
+    .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+        transform: translateX(0%);
+    }
+
+    .carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+        transition: opacity 0.5s, transform 0.5s;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+        display: block;
+        opacity: 1;
+    }
+
+    .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+        opacity: 1;
+    }
+
+    .carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+        transform: translateX(-100%);
+    }
+
+    .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+        transition: opacity 0.5s, transform 0.5s;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+        display: block;
+        opacity: 1;
+
+    }
+
+    .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+        opacity: 1;
+    }
+
+    .carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+        transform: translateX(-200%);
+    }
+
+    .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+        transition: opacity 0.5s, transform 0.5s;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+        display: block;
+        opacity: 1;
+    }
+
+    .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+        opacity: 1;
+    }
+
+    .carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+        transform: translateX(-300%);
+    }
+
+    .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+        transition: opacity 0.5s, transform 0.5s;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+        display: block;
+        opacity: 1;
+    }
+
+    .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+        opacity: 1;
+    }
+
+    .carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+        transform: translateX(-400%);
+    }
+
+    .carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+        transition: opacity 0.5s, transform 0.5s;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+        display: block;
+        opacity: 1;
+    }
+
+    .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+        opacity: 1;
+    }
+
+    .carousel__control {
+        height: 30px;
+        width: 30px;
+        margin-top: -15px;
+        top: 50%;
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        border-width: 5px 5px 0 0;
+        border-style: solid;
+        border-color: #fafafa;
+        opacity: 0.35;
+        outline: 0;
+        z-index: 3;
+    }
+
+    .carousel__control:hover {
+        opacity: 1;
+    }
+
+    .carousel__control--backward {
+        left: 10px;
+        transform: rotate(-135deg);
+    }
+
+    .carousel__control--forward {
+        right: 10px;
+        transform: rotate(45deg);
+    }
+
+    .carousel__indicators {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel__indicator {
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        display: inline-block;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 0.35;
+        margin: 0 2.5px 0 2.5px;
+    }
+
+    .carousel__indicator:hover {
+        opacity: 0.75;
+    }
+
+    .carousel__track {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        transition: transform 0.5s ease 0s;
+    }
+
+    .carousel__track .carousel__slide {
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+
+    .carousel__track .carousel__slide:nth-of-type(1) {
+        transform: translateX(0%);
+    }
+
+    .carousel__track .carousel__slide:nth-of-type(2) {
+        transform: translateX(100%);
+    }
+
+    .carousel__track .carousel__slide:nth-of-type(3) {
+        transform: translateX(200%);
+    }
+
+    .carousel__track .carousel__slide:nth-of-type(4) {
+        transform: translateX(300%);
+    }
+
+    .carousel__track .carousel__slide:nth-of-type(5) {
+        transform: translateX(400%);
+    }
+
+    .carousel--scale .carousel__slide {
+        transform: scale(0);
+    }
+
+    .carousel__slide {
+        height: 100%;
+        position: absolute;
+        overflow-y: auto;
+        opacity: 0;
+    }
+
+    /**
+      * Theming
+    */
+
+
+    .my-carousel {
+        border-radius: 5px;
+        margin: 30px;
+    }
+
+    .carousel__slide {
+        overflow: hidden;
+    }
+
+    .carousel--thumb .carousel__indicator {
+        height: 30px;
+        width: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+        color: #fafafa;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    h2,
+    h3 {
+        color: #fafafa;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+
+    .carousel__indicator {
+        background-color: #fafafa;
+    }
+
+    .carousel__slide:nth-of-type(1),
+    .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+        background-image: url("../../Downloads/АГРОСАЙТ/assets/photoForTomato/Remove-bg.ai_1733780554997.png");
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .carousel__slide:nth-of-type(2),
+    .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+        background-image: url("../../Downloads/АГРОСАЙТ/assets/photoForTomato/Remove-bg.ai_1733780578296.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .carousel__slide:nth-of-type(3),
+    .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+        background-image: url("../../Downloads/АГРОСАЙТ/assets/photoForTomato/Remove-bg.ai_1733780601317.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .carousel__slide:nth-of-type(4),
+    .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+        background-image: url("../../Downloads/АГРОСАЙТ/assets/photoForTomato/Remove-bg.ai_1733780640235.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .carousel__slide:nth-of-type(5),
+    .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+        background-image: url("../../Downloads/АГРОСАЙТ/assets/photoForTomato/Remove-bg.ai_1733780651691.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*.carousel__slide:nth-of-type(6),*/
+    /*.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {*/
+    /*    background-image: url("assets/img/Pc65_1/photo_6_2024-03-23_00-25-05.jpg");*/
+    /*    background-size: cover;*/
+    /*    background-position: center;*/
+    /*}*/
+
+    /*.carousel__slide:nth-of-type(7),*/
+    /*.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {*/
+    /*    background-image: url("assets/img/Pc65_1/photo_7_2024-03-23_00-25-05.jpg");*/
+    /*    background-size: cover;*/
+    /*    background-position: center;*/
+    /*}*/
+
+    /*.carousel__slide:nth-of-type(8),*/
+    /*.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {*/
+    /*    background-image: url("assets/img/Pc65_1/photo_8_2024-03-23_00-25-05.jpg");*/
+    /*    background-size: cover;*/
+    /*    background-position: center;*/
+    /*}*/
+
+
+</style>
+
+<script>var animateButton = function (e) {
+
+    e.preventDefault;
+    //reset animation
+    e.target.classList.remove('animate');
+
+    e.target.classList.add('animate');
+    setTimeout(function () {
+        e.target.classList.remove('animate');
+    }, 700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+    bubblyButtons[i].addEventListener('click', animateButton, false);
+}</script>
+
+
+<body style="display:flex;justify-content:center;flex-wrap:wrap;width:100%;position:relative;text-align:center;  font-family: 'Poppins', sans-serif;">
+
+
+<!--<div style="margin-left: 0.33%; width: 1650px; height: auto" >-->
+<!--    <div class="ya-site-form ya-site-form_inited_no"-->
+<!--         data-bem="{&quot;action&quot;:&quot;http://greenhorizont24.ru&quot;,&quot;arrow&quot;:true,&quot;bg&quot;:&quot;#79a209&quot;,&quot;fontsize&quot;:16,&quot;fg&quot;:&quot;#000000&quot;,&quot;language&quot;:&quot;ru&quot;,&quot;logo&quot;:&quot;rb&quot;,&quot;publicname&quot;:&quot;greenhorizont24.ru&quot;,&quot;suggest&quot;:true,&quot;target&quot;:&quot;_self&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;type&quot;:2,&quot;usebigdictionary&quot;:false,&quot;searchid&quot;:2978360,&quot;input_fg&quot;:&quot;#1b1d21&quot;,&quot;input_bg&quot;:&quot;#ffffff&quot;,&quot;input_fontStyle&quot;:&quot;italic&quot;,&quot;input_fontWeight&quot;:&quot;bold&quot;,&quot;input_placeholder&quot;:&quot;Поиск по сайту&quot;,&quot;input_placeholderColor&quot;:&quot;#1b1d21&quot;,&quot;input_borderColor&quot;:&quot;#79a209&quot;}">-->
+<!--        <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8"><input-->
+<!--                type="hidden" name="searchid" value="2978360"/><input type="hidden" name="l10n" value="ru"/><input-->
+<!--                type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit"-->
+<!--                                                                                                        value="Найти"/>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--    <style type="text/css">.ya-page_js_yes .ya-site-form_inited_no {-->
+<!--        display: none;-->
+<!--    }</style>-->
+<!--    <script type="text/javascript">(function (w, d, c) {-->
+<!--        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0], e = d.documentElement;-->
+<!--        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {-->
+<!--            e.className += ' ya-page_js_yes';-->
+<!--        }-->
+<!--        s.type = 'text/javascript';-->
+<!--        s.async = true;-->
+<!--        s.charset = 'utf-8';-->
+<!--        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';-->
+<!--        h.parentNode.insertBefore(s, h);-->
+<!--        (w[c] || (w[c] = [])).push(function () {-->
+<!--            Ya.Site.Form.init()-->
+<!--        })-->
+<!--    })(window, document, 'yandex_site_callbacks');</script>-->
+<!--    <div id="ya-site-results"-->
+<!--         data-bem="{&quot;tld&quot;: &quot;ru&quot;,&quot;language&quot;: &quot;ru&quot;,&quot;encoding&quot;: &quot;&quot;,&quot;htmlcss&quot;: &quot;1.x&quot;,&quot;updatehash&quot;: true}"></div>-->
+<!--    <script type="text/javascript">(function (w, d, c) {-->
+<!--        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0];-->
+<!--        s.type = 'text/javascript';-->
+<!--        s.async = true;-->
+<!--        s.charset = 'utf-8';-->
+<!--        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';-->
+<!--        h.parentNode.insertBefore(s, h);-->
+<!--        (w[c] || (w[c] = [])).push(function () {-->
+<!--            Ya.Site.Results.init();-->
+<!--        })-->
+<!--    })(window, document, 'yandex_site_callbacks');</script>-->
+<!--</div>-->
+
+<div class="container">
+    <div class="imgBx1">
+
+        <a href="продукт.html">
+            <!--            <img style="width: 60px; height: 50px; top:50px;" title = "игровой товар" src="assets\img\logo\logofile\logo3\Remove-bg.ai_1705497248638.png"-->
+            <!--                 alt="Nike Jordan Proto-Lyte Image">-->
+            <!--            <img style="width: 65px; height: 50px; top:50px;   " title = "игровой товар" src="assets\img\logo\logofile\logo3\Remove-bg.ai_1705497349480.png"-->
+            <!--                 alt="Nike Jordan Proto-Lyte Image">-->
+            <!--            <img style="width: 65px; height: 50px; top:50px;   " title = "игровой товар" src="assets\img\logo\logofile\logo3\Remove-bg.ai_1705497444623.png"-->
+            <!--                 alt="Nike Jordan Proto-Lyte Image">-->
+            <!--            <img style="width: 55px; height: 40px; top:50px;" title = "игровой товар" src="assets\img\logo\logofile\logo3\Remove-bg.ai_1705498063282.png"-->
+            <!--                 alt="Nike Jordan Proto-Lyte Image">-->
+
+            <!--            <img style="width: 55px; height: 40px; top:50px; " title="игровой товар"-->
+            <!--                 src="assets\img\logo\logofile\logo2\Remove-bg.ai_1705492921755.png"-->
+            <!--                 alt="Nike Jordan Proto-Lyte Image">-->
+
+
+            <!--            <img style="width: 50px; height: 50px; top:50px; " title = "игровой товар" src="assets\img\logo\logofile\logo3\Remove-bg.ai_1705497619726.png"-->
+            <!--                 alt="Nike Jordan Proto-Lyte Image">-->
+
+
+            <!--     <img style="width: 110%; height: 110%" title="игровой товар"-->
+            <!--                 src="assets\img\logo\Remove-bg.ai_1705408829590.png"-->
+            <!--                 alt="Nike Jordan Proto-Lyte Image"></a>-->
+            <!--<h3>Pure CSS carousels</h3>-->
+
+            <div class="carousel-container">
+
+                <div class="carousel my-carousel carousel--translate">
+    <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked"/>
+    <input class="carousel__activator" type="radio" name="carousel" id="G"/>
+    <input class="carousel__activator" type="radio" name="carousel" id="H"/>
+    <input class="carousel__activator" type="radio" name="carousel" id="I"/>
+    <input class="carousel__activator" type="radio" name="carousel" id="J"/>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="J"></label>
+      <label class="carousel__control carousel__control--forward" for="G"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="F"></label>
+      <label class="carousel__control carousel__control--forward" for="H"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="G"></label>
+      <label class="carousel__control carousel__control--forward" for="I"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="H"></label>
+      <label class="carousel__control carousel__control--forward" for="J"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="I"></label>
+      <label class="carousel__control carousel__control--forward" for="F"></label>
+    </div>
+    <div class="carousel__track">
+      <li class="carousel__slide">
+
+      </li>
+      <li class="carousel__slide">
+
+      </li>
+      <li class="carousel__slide">
+
+      </li>
+      <li class="carousel__slide">
+
+      </li>
+      <li class="carousel__slide">
+
+      </li>
+    </div>
+    <div class="carousel__indicators">
+      <label class="carousel__indicator" for="F"></label>
+      <label class="carousel__indicator" for="G"></label>
+      <label class="carousel__indicator" for="H"></label>
+      <label class="carousel__indicator" for="I"></label>
+      <label class="carousel__indicator" for="J"></label>
+    </div>
+  </div>
+            </div>
+        </a>
+
+        <div class="card__label"><span class="fa fa-shopping-bag"><b>  Доставка</b></span></div>
+        <!--        <div class="card__label_2" ><span class="fa fa-check"><b> Гарантия</b></span></div>-->
+
+        <div class="card__label_2"><span class="fa fa-gift"><b> Подарок</b></span></div>
+        <div class="card__label_3"><span class="fa fa-check"><b> Гарантия</b></span></div>
+        <!--        <div class="card__label_4" ><span class="fa fa-arrow-down"><b>-25%</b></span></div>-->
+
+    </div>
+
+
+    <div class="details" style="margin: 0 auto; ">
+        <div class="content">
+            <a href="http://www.stroy-birzha.ru/request/?code=ffa8ce586819" style="text-align: center; ;"
+               class="change-text"><b>Камера Spescim FX10 с ИИ</b><br></a>
+
+
+            <!--                                <span style="text-align: center;text-align: center;-->
+
+            <!--            background: linear-gradient(to left,-->
+            <!--                    violet,-->
+            <!--                    indigo,-->
+            <!--                    blue,-->
+            <!--                    green,-->
+            <!--                    yellow,-->
+            <!--                    orange,-->
+            <!--                    red);-->
+            <!--            -webkit-background-clip: text;-->
+            <!--            color: transparent; ">Cylon Viper Gaming</span>-->
+            <h2 href="http://www.stroy-birzha.ru/request/?code=ffa8ce586819"><span style="text-align: center; font-family: 'SYMBOL';"
+                                                                                   class="change-text">От компании ДГТУ</span>
+            </h2>
+
+            <p style="text-align: center; ">
+                <!--                <img src="assets\img\Photo_Pc\free-icon-cpu-543234.png" width="25" height="25">Intel Core i3-10100f 3.6-->
+                <!--                MGh<br>-->
+                <!--                <img src="assets\img\Photo_Pc\free-icon-motherboard-5921800.png" width="25" height="25">Asus PRIME-->
+                <!--                H470M-K<br>-->
+                <!--                <img src="assets\img\Photo_Pc\free-icon-ram-memory-3786576.png" width="25" height="25">Crucial Micron 16-->
+                <!--                gb ddr4<br>-->
+
+                <!--                <img src="assets\img\Photo_Pc\free-icon-video-card-2656271.png" width="25" height="25">Nvideo GeForce-->
+                <!--                GTX 970 4gb<br>-->
+                <!--                <img src="assets\img\Photo_Pc\free-icon-ssd-6084118.png" width="25" height="25">SSD Sata 3.0 Netac 256gb<br>-->
+
+                <!--                <img src="assets\img\Photo_Pc\free-icon-harddisk-3191506.png" width="25" height="25">HDD SeaGate-->
+                <!--                Barracuda 256gb<br>-->
+                <!--                <img src="assets\img\Photo_Pc\free-icon-cooling-system-675821.png" width="25" height="25">DeepCool-->
+                <!--                Gammax 200T<br>-->
+                <!--                <img src="assets\img\Photo_Pc\free-icon-cooling-system-984458.png" width="25" height="25">Thermaltake-->
+                <!--                650W<br>-->
+                <!--                <img src="assets\img\Photo_Pc\free-icon-tower-pc-4617968.png" width="25" height="25">AeroCool Cylon-->
+                <!--                Viper Gaming-->
+
+            <h4 style="margin-left:auto;margin-right:auto; margin-top: -25px;  line-height: 2;   font-family: 'Poppins', sans-serif;">
+                Разрешение
+1280x1024<br>
+               Спектральный диапазон
+400-1000 нм<br>
+                Режим сканирования
+пространственное<br>
+                Инфракрасная область (VNIR)<br>
+                Поставщик
+Specim<br>
+               Тип сенсора
+CMOS<br>
+                Cкорость обработки 705 кад/cек<br>
+                Встроенная коррекция изображения<br>
+            </h4>
+            <!--margin-inline: 100px-->
+
+            <img alt="" style="  float: left; "
+                 src="../../Downloads/АГРОСАЙТ/assets/photoForTomato/photo_2024-12-09_19-47-28%20(1).jpg">
+            <!--            <span class="block_rating__avarage"-->
+            <!--                  style="     white-space: nowrap;      font-family: 'Poppins', sans-serif;"><span-->
+            <!--                    style="  float: right;">Код товара: 21</span></span>-->
+
+
+            </p>
+
+
+            <!--            <p class="product-colors1" style=" margin-left:auto;-->
+            <!--  margin-right:auto; margin-top: -25px;       font-family: 'Poppins', sans-serif;">-->
+
+            <!--                <span class="PcPhoto1" data-color-sec1="#212121" href="product-details — копия (6).html"-->
+            <!--                      data-pic1="assets\img\icon\photo_2023-11-12_17-13-21.png"><img-->
+            <!--                                                                                     src="assets\img\logo\photo_2_2024-01-16_15-45-04.jpg"/></span>-->
+
+
+            <!--                <span class="PcPhoto2" data-color-sec1="#bd072d"-->
+            <!--                      data-pic1="assets\img\icon\photo_2023-11-12_17-13-22.png"><img-->
+
+            <!--                        src="assets\img\logo\Remove-bg.ai_1705409147700.png"/></span>-->
+
+            <!--&lt;!&ndash;                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>&ndash;&gt;-->
+            <!--&lt;!&ndash;            <div class="zoomer">&ndash;&gt;-->
+            <!--&lt;!&ndash;                <div class="large"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;                <div class="small"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;            </div>&ndash;&gt;-->
+            <!--            </p>-->
+
+            <div
+                    style="margin-top: -25px;                /* отступ сверху */
+	margin-bottom: 10px;        white-space: nowrap;   font-family: 'Poppins', sans-serif;">
+                <fieldset class="block_rating__stars2">
+                    <input type="radio" id="star" value=""/ checked><label
+                        class="active" for="star"></label>
+                    <input type="radio" id="starhalf"
+                           value=" and a half"/>
+
+                    <input type="radio" id="star" name="rating" value=""/><label
+                        class="" for="star"></label>
+                    <input type="radio" id="starhalf" name="rating"
+                           value=" and a half"/>
+                    <input type="radio" id="star" name="rating" value=""/><label
+                        class="" for="star"></label>
+                    <input type="radio" id="starhalf" name="rating"
+                           value=" and a half"/>
+                    <input type="radio" id="star" name="rating" value=""/><label
+                        class="full" for="star"
+                        title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="starhalf" name="rating"
+                           value=" and a half"/>
+                    <input type="radio" id="star" name="rating" value=""/><label
+                        class="full" for="star"
+                ></label>
+                    <input type="radio" id="" name="rating"
+                           value="half"/>
+                </fieldset>
+                <!--#include virtual="/.../header.html" -->
+                <link rel="import" href="продукт.html">
+
+
+                <span class="block_rating__avarage"
+                      style="     white-space: nowrap;      font-family: 'Poppins', sans-serif;">               5.0</span>
+                <span class="block_rating__reviews"
+                      style="  white-space: nowrap;      font-family: 'Poppins', sans-serif;">
+                    <a
+                            href="продукт.html" style="font-size: 15px;  margin-top: -100px; font-family: 'SYMBOL'"
+                            class="change-text">(Рейтинг)</a>
+
+</span>
+
+            </div>
+
+
+            <!--            <span style="vertical-align: sub"><h3 style="color: #10c44c">50 000 ₽</h3></span>-->
+
+
+            <!--            </span><span class="old-dis" style="color:#a2a2a2;">75 000 ₽</span>-->
+
+
+            <!--            <h4 style=" color: #10c44c; padding-right: 50%; margin-top: -29%;";  class="fa fa-arrow-down"> Стало дешевле</h4>-->
+
+            <h3 style="background-color: #10c44c; color: #Ffffff;
+<!--                        border: 1px solid #10c44c; padding: 10px; border-radius: 50px;  white-space: nowrap; font-family: 'Poppins', sans-serif;"
+                class="white-price"><span style="color: #FFFFFF; font-size: 35px; ">25 000 ₽</span><br>
+            </h3>
+
+
+            <!--            <img src="assets\img\Photo_Pc\free-icon-cpu-543234.png" width="20" height="20" style="margin-right: 20px">-->
+
+
+            <!--                        <div class="resultContainer">-->
+            <!--                            <div style="display: inline;">-->
+
+            <!--                                <div class="content-wrap">-->
+            <!--                        <span class="bookTitle">   <span style="vertical-align: sub"><h3 style="color: #Ffffff; font-size: 45px; background-color: #10c44c;-->
+            <!--                        border: 1px solid #10c44c; padding: 10px; border-radius: 50px;">50 000 ₽<br>-->
+            <!--                            <span style="font-size: 25px; padding-top: -40px;-->
+            <!--       ">Стало</span></h3>-->
+            <!--                            </h3></span></span>-->
+
+
+            <span class="old-dis"
+                  style="margin-top: 10px ;color:#a2a2a2; position: relative;  white-space: nowrap;   font-family: 'Poppins', sans-serif;">31 250 ₽</span>
+
+            <span class="new-dis" style="color:#f1425d; position: relative; right: auto; white-space: nowrap; ">-25%</span>
+
+
+            <!--            <div class="card__label_4" ><span class="fa fa-arrow-down"><b>-25%</b></span></div>-->
+            <h5 style=" margin-top: -2.5px;   font-family: 'SYMBOL';    white-space: nowrap; " class="block_rating__avarage">
+                 <span class="fa fa-thumbs-o-up"></span> Лучшая цена</h5>
+            <!--            <div class="buttons">-->
+            <!--                <button class="btn-hover color-1">BUTTON</button>-->
+
+            <!--            </div>-->
+
+
+            <button style="font-size: 100%; " onclick='window.location.href="https://t.me/yegorenergy"'
+                    class="btn btn-2 btn-sep icon-cart">
+
+                <div><span id="hours"></span></div>
+                <script type="text/javascript">
+
+                    obj_hours = document.getElementById("hours");
+
+                    name_month = new Array("января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря");
+                    name_day = new Array("воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота");
+
+                    function wr_hours() {
+                        time = new Date();
+
+                        time_sec = time.getSeconds();
+                        time_min = time.getMinutes();
+                        time_hours = time.getHours();
+                        time_wr = ((time_hours < 10) ? "0" : "") + time_hours;
+                        time_wr += ":";
+                        time_wr += ((time_min < 10) ? "0" : "") + time_min;
+                        time_wr += ":";
+                        time_wr += ((time_sec < 10) ? "0" : "") + time_sec;
+
+                        time_wr = time.getDate() + " " + name_month[time.getMonth()];
+
+                        obj_hours.innerHTML = time_wr;
+                    }
+
+                    wr_hours();
+                    setInterval("wr_hours();", 1000);
+
+                </script>
+            </button>
+
+
+            <!--                <a href="#">-->
+            <!--                    <div class="social-btn telegram-color">-->
+            <!--                        <h4>Telegram</h4>-->
+            <!--                        <div class="icons8-telegram-app"></div>-->
+            <!--                    </div>-->
+            <!--                </a>-->
+
+            <!--            <button class="bubbly-button">Click me!</button>-->
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--            <p class="product-colors1">-->
+<!--                <span class="black active" data-color-sec1="#212121" data-pic1="assets\img\pngwing.com (29).png"></span>-->
+<!--                <span class="red" data-color-sec1="#bd072d" data-pic1="assets\img\product\Многолетки\Корневищные\61fdc831c18ac4ea65a5553dc7a489d6.jpg"></span>-->
+<!--                <span class="orange" data-color-sec1="#F18557" data-pic1="assets\img\product\Многолетки\Корневищные\600x800.jpg"></span>-->
+<!--                <span class="black active" data-color-sec1="#212121" data-pic1="assets\img\pngwing.com (29).png"></span>-->
+<!--                <span class="red" data-color-sec1="#bd072d" data-pic1="assets\img\product\Многолетки\Корневищные\61fdc831c18ac4ea65a5553dc7a489d6.jpg"></span>-->
+<!--                <span class="orange" data-color-sec1="#F18557" data-pic1="assets\img\product\Многолетки\Корневищные\600x800.jpg"></span>-->
+<!--                <span class="black active" data-color-sec1="#212121" data-pic1="assets\img\pngwing.com (29).png"></span>-->
+<!--                <span class="red" data-color-sec1="#bd072d" data-pic1="assets\img\product\Многолетки\Корневищные\61fdc831c18ac4ea65a5553dc7a489d6.jpg"></span>-->
+<!--            </p>-->
+
+
+<!--            <h3>₽ 50 000</h3>-->
+
+<!--            <h5 class="old-price" style="text-algin: right">₽ 75 000</h5>-->
+
+
+<!--            <button>Buy Now</button>-->
+
+
+<script>
+    // Change The Picture and Associated Element Color when Color Options Are Clicked.
+    $(".product-colors1 span").click(function () {
+        $(".product-colors1 span").removeClass("active");
+        $(this).addClass("active");
+        $(".active").css("border-color", $(this).attr("data-color-sec1"))
+        $("body").css("background", $(this).attr("data-color-primary"));
+        $(".content h2").css("color", $(this).attr("data-color-sec1"));
+        $(".content h3").css("color", $(this).attr("data-color-sec1"));
+        $(".container .imgBx1").css("background", $(this).attr("data-color-sec1"));
+        $(".container .details button").css("background", $(this).attr("data-color-sec1"));
+        $(".imgBx1 img").attr('src', $(this).attr("data-pic1"));
+    });
+</script>
+
+
+</body>
+
+
+
+
+
+</body>
+
+</html>
+
